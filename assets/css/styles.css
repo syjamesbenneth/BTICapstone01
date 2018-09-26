@@ -83,7 +83,7 @@ body {
 
 #cardimgs {
 	height:200px; 
-	width:340px;
+	/*width:340px;*/
 }
 
 #backtotopbtn {
@@ -106,3 +106,22 @@ body {
     display: block;
     text-align: left;
   }
+
+  body {
+    overflow-x: hidden !important;
+}
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+/*To expand a bit, I only had the problem on mobile phones, so this is my final code:
+*/
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
